@@ -27,13 +27,14 @@ CREATE TABLE `users` (
   `mail` varchar(26) NOT NULL,
   `User_type` enum('user','admin') NOT NULL,
   `Valid` tinyint(1) NOT NULL,
+  `Password` varchar(20) NOT NULL,
   KEY `ID` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 
 /*Data for the table `users` */
 
-insert  into `users`(`ID`,`FirstName`,`LastName`,`mail`,`User_type`,`Valid`) values 
-(1,'Balta','Fernandez','baltifg@gmail.com','admin',1);
+insert  into `users`(`ID`,`FirstName`,`LastName`,`mail`,`User_type`,`Valid`,`Password`) values 
+(1,'Balta','Fernandez','baltifg@gmail.com','admin',1,'rit2023');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
