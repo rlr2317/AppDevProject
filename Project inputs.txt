@@ -1,0 +1,3 @@
+cd C:\Users\Romo\Desktop\project
+mvn clean install
+mvn spring-boot:run
